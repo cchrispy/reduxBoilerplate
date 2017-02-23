@@ -3,10 +3,10 @@
 ** Make sure to remove the sampleReducer in production!
 */
 
-import { combineReducer } from 'redux';
+import { combineReducers } from 'redux';
 import sampleReducer from './sampleReducer';
 
-const mainReducer = combineReducer({
+const mainReducer = combineReducers({
   sampleReducer
 })
 

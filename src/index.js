@@ -5,6 +5,8 @@ import mainReducer from './reducers/mainReducer';
 
 import App from './components/App.jsx';
 
+let store = createStore(mainReducer);
+console.log(store.getState());
 
 const refresh = () => {
   render(
