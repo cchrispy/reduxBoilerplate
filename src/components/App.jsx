@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 import '../styles/main.scss';
 
@@ -8,6 +9,7 @@ class App extends Component {
   }
 
   render() {
+    console.log(this.props.reduxStore);
     return (
       <div>
         Hello World!
@@ -16,4 +18,14 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = (state, ownProps) => ({
+  reduxStore: state
+})
+
+const mapDispatchToProps = (dispatch, ownProps) => ({
+  sampleAction: () => {
+    dispatch({ type: 'SAMPLE_ACTION', sampleObject: {} })
+  }
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
