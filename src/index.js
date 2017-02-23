@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
 import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 import { render } from 'react-dom';
 import mainReducer from './reducers/mainReducer';
 
 import App from './components/App.jsx';
 
 let store = createStore(mainReducer);
-console.log(store.getState());
 
 const refresh = () => {
   render(
-    <App />,
+    <Provider store={ store }>
+      <App />
+    </Provider>,
     document.getElementById('app')
   )
 }
 
 refresh();
+store.subscribe(refresh);
