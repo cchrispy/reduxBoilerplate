@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import sampleAction from '../actions/sampleAction';
 
 import '../styles/main.scss';
 
@@ -24,7 +25,7 @@ const mapStateToProps = (state, ownProps) => ({
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
   sampleAction: () => {
-    dispatch({ type: 'SAMPLE_ACTION', sampleObject: {} })
+    dispatch(sampleAction())
   }
 })
 
