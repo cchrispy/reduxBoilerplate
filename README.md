@@ -9,9 +9,11 @@ $  git clone https://github.com/cchrispy/reduxBoilerplate.git
 Install dependencies  
 $  npm install  
 
-Build source files to distribution folder  
+Compile source files to distribution folder  
 $  npm run compile  
-  
+Alternatively, use "build" to watch for changes and re-compile  
+$  npm run build
+
 Start node server listening on port 8000  
 $  npm start  
 ```
