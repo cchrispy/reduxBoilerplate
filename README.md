@@ -4,7 +4,7 @@ Boilerplate code to set up an application with Redux and Webpack, running on a n
 ### Getting started  
 ```
 Clone down repository  
-$  git clone https://github.com/cchrispy/reduxBoilerplate.git `<project-name>` --depth 1
+$  git clone https://github.com/cchrispy/reduxBoilerplate.git [project-name] --depth 1
 
 Install dependencies  
 $  npm install  
