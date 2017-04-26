@@ -1,6 +1,6 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
-  title: 'Conway\'s Game Of Life',
+  title: 'Sample Title',
   filename: 'index.html',
   template: './src/index.html',
   inject: 'body'
